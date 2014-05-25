@@ -3,6 +3,11 @@ function data = update_plot( data, channel )
 %
 % Compute water filling and update the plot. Use variables inside data, if
 % channel input variable is present, generate new channel.
+%
+% Reference:
+% "MIMO-OFDM Wireless Communications with MATLAB"
+% Yong S. Cho, Jaekwon Kim, Won Y. Yang, Chung G. Kang (Korea University)
+% Wiley-IEEE Press, 2011
 
 % Giulio Marin
 %
@@ -53,6 +58,9 @@ c     = 0;      % 1/lambda
 delta = 0.01;   % increment of 1/lambda
 P = zeros(size(Gamma));
 
+% Start from 1/lambda = 0 and increase the value until the maximum
+% available power is reached. Force to 0 the subcarriers where the
+% algorithm would have given a negative value.
 while Psum < Ptot
     c = c + delta;
     P = c - (1./Gamma);
