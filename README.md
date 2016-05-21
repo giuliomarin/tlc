@@ -12,10 +12,15 @@ Directory: [ldpc](https://github.com/giuliomarin/tlc/tree/master/ldpc)
 
 Presentation: [link](http://prezi.com/aqckvai6jux-/?utm_campaign=share&utm_medium=copy)
 
---------------------------------------------------------------------------------
+
 Water-filling OFDM
 --------------------------------------------------------------------------------
 Water filling for optimal power allocation in OFDM systems
 
 Directory: [water_filling_ofdm](https://github.com/giuliomarin/tlc/tree/master/water_filling_ofdm)
 
+7-cells CDMA performance
+--------------------------------------------------------------------------------
+Analysis of a CDMA based system in a 7-cells scenario
+
+Directory: [cdma](https://github.com/giuliomarin/tlc/tree/master/cdma)
