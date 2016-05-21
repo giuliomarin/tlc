@@ -428,10 +428,20 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
 end
 end
 
-% TODO: impostare la soglia minima di PRmin nel grafico in base a Pn
-% (potenza rumore). Prmin minimo è SINRmin*Pn
+% --- Executes during object creation, after setting all properties.
+function figure1_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to figure1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+end
+
+
+% Additional functions
 
 function data = cdma(data, ~)
+
+% TODO: impostare la soglia minima di PRmin nel grafico in base a Pn
+% (potenza rumore). Prmin minimo è SINRmin*Pn
 
 clc
 
@@ -692,14 +702,6 @@ if(stampa)
     
 end
 end
-
-% --- Executes during object creation, after setting all properties.
-function figure1_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to figure1 (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    empty - handles not created until after all CreateFcns called
-end
-
 
 function [x0,y0,cx,cy] = hexagon(r, Nu)
 %HEXAGON Hexagonal cell structure.
